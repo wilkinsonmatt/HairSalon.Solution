@@ -20,7 +20,6 @@ namespace HairSalon.Controllers
     public ActionResult Index()
     {
       List<Client> model = _db.Clients.Include(client => client.Stylist).ToList(); 
-      ViewBag.PageTitle = "View All Clients";
       return View(model);
     }
 
@@ -33,9 +32,9 @@ namespace HairSalon.Controllers
     [HttpPost]
     public ActionResult Create(Client client)
     {
-        _db.Clients.Add(client);
-        _db.SaveChanges();
-        return RedirectToAction("Index");
+      _db.Clients.Add(client);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
     }
 
     public ActionResult Edit(int id)
@@ -55,17 +54,17 @@ namespace HairSalon.Controllers
 
     public ActionResult Delete(int id)
     {
-        var thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
-        return View(thisClient);
+      var thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+      return View(thisClient);
     }
 
     [HttpPost, ActionName("Delete")]
     public ActionResult DeleteConfirmed(int id)
     {
-        var thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
-        _db.Clients.Remove(thisClient);
-        _db.SaveChanges();
-        return RedirectToAction("Index");
+      var thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+      _db.Clients.Remove(thisClient);
+      _db.SaveChanges();
+      return RedirectToAction("Index");
     }
 
     public ActionResult Details(int id)

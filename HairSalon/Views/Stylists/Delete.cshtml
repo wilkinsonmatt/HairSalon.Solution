@@ -5,17 +5,14 @@
 @model HairSalon.Models.Stylist
 
 <h4>Are you sure you want to delete "@Html.DisplayFor(model => model.Name)" from the stylist list?</h4>
-
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
-
 <br>
+
 @using (Html.BeginForm())
 {
-  <br>
   <input type="submit" value="Delete"/>
 }
-<br>
-<br>
 
+<br>
+<br>
 <p><a href='/Stylists'>View list of all stylists</a></p>
 <p><a href='/'>Back to the home page</a></p>

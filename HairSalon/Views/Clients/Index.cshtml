@@ -3,11 +3,10 @@
   Layout = "_Layout";
 }
 
-@using HairSalon.Models;
-
 <h3> List of Clients: </h3>
 <br>
 
+@using HairSalon.Models;
 @model List<HairSalon.Models.Client>;
 @if (@Model.Count == 0)
 {

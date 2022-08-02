@@ -5,13 +5,10 @@
 @model HairSalon.Models.Client 
 
 <h4>Are you sure you want to delete "@Html.DisplayFor(model => model.Name)" from the Client list?</h4>
-
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
-
 <br>
+
 @using (Html.BeginForm())
 {
-  <br>
   <input type="submit" value="Delete"/>
 }
 

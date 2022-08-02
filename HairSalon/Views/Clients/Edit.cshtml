@@ -5,6 +5,7 @@
 @model HairSalon.Models.Client
 
 <h3>Edit Client info: @Html.DisplayFor(model => model.Name)</h3>
+<br>
 
 @using (Html.BeginForm())
 {
@@ -15,6 +16,7 @@
 
   @Html.LabelFor(model => model.Stylist)
   @Html.DropDownList("StylistId")
+
   <input type="submit" value="Save" />
 }
 
