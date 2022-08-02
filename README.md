@@ -33,7 +33,7 @@ A C# program that allows Eau be able to add a list of stylists working at the sa
 ```
 { 
   "ConnectionStrings": { 
-    "DefaultConnection": "Server=localhost;Port=3306;database=[Database-Name];uid=root;pwd=[Your-Password;" 
+    "DefaultConnection": "Server=localhost;Port=3306;database=matt_wilkinson;uid=root;pwd=[YOUR PASSWORD];" 
   } 
 }
 ```
