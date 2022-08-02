@@ -37,26 +37,22 @@ A C# program that allows Eau be able to add a list of stylists working at the sa
   } 
 }
 ```
-* Open MySQL WorkBench 
-* In the Navigator > Administration window, select Data Import/Restore
-* In Import Options select Import from Self-Contained File
-* You will use .sql file type that is located the root directory ```HairSalon.Solution```.
-* Navigate to the tab called Import Progress and click Start Import at the bottom right corner of the window.
-* After you are finished with the above steps, reopen the Navigator > Schemas tab. Right click and select Refresh All.
 * Import the database named "matt_wilkinson.sql" from the root directory of the project.<br><br>
 How to import the database:
-  <li>Open SQL Workbench.
-  <li>Navigate to "Administration" tab in SQL Workbench.
-  <li>Click "Data Import/Restore".
-  <li>Select the radio button "Import from Self-Contained File" and include file path to the sql file of this project you cloned to your machine.
-  <li>In "Default Schema to be Imported to" click "New".
-  <li>Name the schema "matt_wilkinson" then click "OK".
-  <li>Once named, switch to "Import Progress" tab and click "Start Import
-
+* Open SQL Workbench.
+* Click the "Administration" tab on the left side of the page
+* Click "Data Import/Restore" 
+* Select "Import from Self-Contained File" and change the file location to "matt_wilkinson.sql"
+* Then click the "New" button next to the "default Target Schema"
+* Name the schema "matt_wilkinson
+* Click ok
+* Click "Start import" at the bottom of the page
 <br>
-- run ```dotnet restore``` and ```dotnet build``` then ```dotnet run```
-
-- click on  <http://localhost:5000>
+* Run the following commands in the command line:
+  <br>1: dotnet restore
+  <br>2: dotnet build
+  <br>3: dotnet run
+* click on  <http://localhost:5000>
 
 ## Known Bugs
 
