@@ -5,12 +5,19 @@
 @model HairSalon.Models.Stylist
 
 <h2>Stylists Details</h2>
-<hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
+<hr/>
+<h3>Name: @Html.DisplayFor(model => model.Name)<h3>
+<h3>Phone Number: @Html.DisplayFor(model => model.Phone_Number)<h3>
+<ul>
+
+
 <br>
 <br>
 
 <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Back to list", "Index")</p>
-<p>@Html.ActionLink("Home", "Index", "Home")</p>
+
+<br>
+<br>
+<p><a href='/Stylists'>View list of all stylists</a></p>
+<p><a href='/'>Back to the home page</a></p>
