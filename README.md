@@ -6,7 +6,7 @@
 
 ## Github links
 
-https://github.com/wilkinsonmatt/Salon.git
+https://github.com/wilkinsonmatt/HairSalon.Solution.git
 
 ## Technologies Used
 
