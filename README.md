@@ -27,7 +27,7 @@ A C# program that allows Eau be able to add a list of stylists working at the sa
 
 * Download/Clone entire github file
 * Open root directory with Bash
-* cd into HairPlace/HairSalon
+* cd into HairSalon.Solution/HairSalon
 * Create an appsetting.json file at the root directory_*
 * Open the appsetting.json file and enter:
 ```
