@@ -21,7 +21,7 @@ https://github.com/wilkinsonmatt/HairSalon.Solution.git
 
 ## Description
 
-A C# program that allows Eau be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.
+A C# program that allows Eau to be able to add a list of stylists working at the salon, and for each stylist, add clients who see that stylist. The stylists have specific specialties, so each client can only see (belong to) a single stylist.
 
 ## Setup/Installation Requirements
 
@@ -37,15 +37,15 @@ A C# program that allows Eau be able to add a list of stylists working at the sa
   } 
 }
 ```
-* Import the database named "matt_wilkinson.sql" from the root directory of the project.<br><br>
-How to import the database:
+* Import the database named "matt_wilkinson.sql" from the root directory of the project into MySQL.<br><br>
+How to import the database with MySQL:
 * Open SQL Workbench.
 * Click the "Administration" tab on the left side of the page
 * Click "Data Import/Restore" 
 * Select "Import from Self-Contained File" and change the file location to "matt_wilkinson.sql"
 * Then click the "New" button next to the "default Target Schema"
-* Name the schema "matt_wilkinson
-* Click ok
+* Name the schema "matt_wilkinson"
+* Click "ok"
 * Click "Start import" at the bottom of the page
 <br>
 * Run the following commands in the command line:
@@ -56,7 +56,7 @@ How to import the database:
 
 ## Known Bugs
 
-* not able to list clients in sytlist details, but able to list stylist next to client in client index
+* not able to list clients in sytlist details, but able to list stylist next to client in the client index
 
 ## License
 
